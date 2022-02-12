@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+    float r,p,s;
+    const float pi = 3.14;
+    printf("Hay nhap ban kinh r: ");
+    scanf("%f",&r);
+    //Tính Toán
+    p = 2*r*pi;
+    s= r*r*pi;
+    if (r>0) //If else đến chết
+        {
+            printf("Chu Vi Hinh Tron la: %.2f",p);
+            printf("\nDien Tich Hinh Tron la: %.2f\a",s);
+        }
+    else if (r==0) //Nếu r=0
+        {
+            printf("Nhap So Khong An CC a?");
+            printf("\nNhap Lai Cho Tao: ");
+            scanf("%f",&r);
+            if (r>0)
+                {
+                    p = 2*r*pi;
+                    s= r*r*pi;
+                    printf("Chu Vi Hinh Tron la: %.2f",p);
+                    printf("\nDien Tich Hinh Tron la: %.2f\a",s);
+                }
+            else if (r==0)
+                {
+                    printf("Con Me May Li VCL");
+                }
+            else
+                {
+                    printf("Con Me May Li VCL");
+                }
+        }
+    else //Nếu r<0
+        {
+            printf("Nhap So Am An CC a?");
+            printf("\nNhap Lai Cho Tao: ");
+            scanf("%f",&r);
+            if (r>0)
+                {
+                    p = 2*r*pi;
+                    s= r*r*pi;
+                    printf("Chu Vi Hinh Tron la: %.2f",p);
+                    printf("\nDien Tich Hinh Tron la: %.2f\a",s);
+                }
+            else if (r==0) printf("Con Me May Li VCL");
+            else printf("Con Me May Li VCL");
+
+        }
+    //làm màu
+    printf("\nNhan Nut Bat Ki De Thoat");
+    getch();
+}
